@@ -1,4 +1,4 @@
-import com.hanky.study.annotations.Apple;
+import com.hanky.annotations.Apple;
 
 public class AnnotationTest {
     public static void main(String[] args) {

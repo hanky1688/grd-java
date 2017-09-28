@@ -1,4 +1,4 @@
-import com.hanky.study.lombok.BindCardInfo;
+import com.hanky.entity.BindCardInfo;
 
 public class MainTest {
 
