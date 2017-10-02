@@ -10,17 +10,25 @@ public class Encryptor {
     }
 
     public static void main(String[] args) {
-        encryptedStr();
+        encryptedStr("6230339012345678");
 
         testCheckPassword(); //vkP26iDSw61X6owplZSJc3VMd0gbGxHERqHns1lw1YJyVVAmGvmxa8riSIieGhYR
 //        testEncryptText();
 
     }
 
-    public static void encryptedStr() {
-        System.out.println("Encryptor.encryptedStr");
+    public static void encryptedStr(){
+        System.out.println("Encryptor.encryptedStr no param");
+
+        String mobile = "13390898777";
+        encryptedStr(mobile);
+    }
+
+    public static void encryptedStr(String str) {
+        System.out.println("Encryptor.encryptedStr param="+str);
+
         StandardPBEStringEncryptor encryptor = encryptor();
-        final String encryptStr = encryptor.encrypt("13390898777");
+        final String encryptStr = encryptor.encrypt(str);
         final String decryptStr = encryptor.decrypt(encryptStr);
 
         System.out.println("encryptStr = [" + encryptStr + "]");
